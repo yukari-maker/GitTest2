@@ -25,7 +25,7 @@ def timer():
 
         print("started")
      #   sec = 0 #このまま使うとここでカウントリセットされる
-        for sec in range(10):
+        for sec in range(300):
          if adc.get_nchan_adc_raw_data(0) > 500:
              sec = sec + 1
              time.sleep(1)
